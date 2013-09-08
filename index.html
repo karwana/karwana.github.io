@@ -1,0 +1,17 @@
+---
+layout: default
+title: Karwana Media Consultants
+description: Karwana is a team of technology and content experts dedicated to news and media.
+---
+
+<article class="home">
+	<h1>{{ page.description }}</h1>
+
+	<nav class="posts">
+		<ol>
+			{% for post in site.posts %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ol>
+	</nav>
+</article>

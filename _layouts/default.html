@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="/css/syntax.css">
+		<link rel="stylesheet" href="/css/main.css">
+		{% if page.description %}
+		<meta name="description" content="{{ page.description }}">
+		{% endif %}
+	</head>
+	<body>
+		<header class="site">
+			<h1 class="title"><a href="/"><img src="/img/karwana.svg" alt="Karwana Media Consultants"></a></h1>
+		</header>
+
+		{{ content }}
+
+		<footer class="site">
+			<p>© Karwana Ltd. Karwana and Karwana Media Consultants are trademarks of Karwana Ltd.</p>
+		</footer>
+	</body>
+</html>
