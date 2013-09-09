@@ -3,6 +3,7 @@
 #
 
 require 'rsvg2'
+require 'image_optim'
 
 module Jekyll
 
@@ -14,8 +15,10 @@ module Jekyll
 			Dir.glob('*.svg') do |from|
 				to = File.basename(from, '.svg') + '.png'
 
-				FileUtils.uptodate?(to, [from]) or \
-					convert(from, to)
+				unless FileUtils.uptodate?(to, [from])
+					self.convert(from, to)
+					self.optim(to)
+				end
 			end
 		end
 
@@ -31,6 +34,14 @@ module Jekyll
 			context.render_rsvg_handle(handle)
 
 			surface.write_to_png(to)
+		end
+
+		def optim(file)
+			puts 'Optimizing ' + file + '...'
+
+			image_optim = ImageOptim.new(:pngout => false, :advpng => false)
+
+			image_optim.optimize_image!(file)
 		end
 
 	end
