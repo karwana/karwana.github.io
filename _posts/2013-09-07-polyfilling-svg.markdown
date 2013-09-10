@@ -43,14 +43,16 @@ At the very least, you'll need to:
 - in the same code, replace the SVG source URL of the image element with that of a PNG image
 - automatically or manually convert your existing SVG files to PNGs
 
-The code for the first two steps is just a few lines:
+The code for the first two steps is just a few lines. You'll need to add it using a script tag that's the first child tag of your page template's body tag.
 
 ```javascript
-document.addEventListener('error', function() {
-	if (this.src) {
+document.body.addEventListener('error', function(event) {
+	var img = event.target;
+
+	if (img.src) {
 
 		// Switch source to PNG fallback for browser that don't support SVG.
-		this.src = this.src.replace(/\.svg$/, '.png');
+		img.src = img.src.replace(/\.svg$/, '.png');
 	}
 }, true);
 ```

@@ -127,7 +127,7 @@ WEBrick::HTTPUtils::DefaultMimeTypes.store 'svg', 'image/svg+xml'
 
 ## Adding the Javascript polyfill ##
 
-Grab the code for the tiny Javascript polyfill from our [previous guide](/2013/09/polyfilling-svg/). Copy it into a file called `svg-polyfill.js` in your project's Javascript directory (e.g. `js/`) and add `<script src="/js/svg-polyfill"></script>` to your default layout's head section.
+Grab the code for the tiny Javascript polyfill from our [previous guide](/2013/09/polyfilling-svg/). Copy it into a file called `svg-polyfill.js` in your project's Javascript directory (e.g. `js/`) and add `<script src="/js/svg-polyfill"></script>` as the first child tag of your default layout's body tag.
 
 ## You're good to go ##
 
