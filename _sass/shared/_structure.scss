@@ -1,5 +1,4 @@
 @import 'compass/css3/box-sizing';
-@import 'compass/css3/background-size';
 
 header.site,
 article,
@@ -14,8 +13,6 @@ header.site {
 	height: 100%;
 	width: 30%;
 	max-width: 21rem;
-	background-image: url(/img/shadows.jpg);
-	@include background-size(cover);
 }
 
 article,
