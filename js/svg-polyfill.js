@@ -4,7 +4,7 @@ document.body.addEventListener('error', function(event) {
 
 	if (img.src) {
 
-		// Switch source to PNG fallback for browser that don't support SVG.
+		// Switch source to PNG fallback for browsers that don't support SVG.
 		img.src = img.src.replace(/\.svg$/, '.png');
 	}
 }, true);
