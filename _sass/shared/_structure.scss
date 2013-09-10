@@ -13,7 +13,7 @@ header.site {
 	top: 0;
 	height: 100%;
 	width: 30%;
-	max-width: 31rem;
+	max-width: 21rem;
 	background-image: url(/img/shadows.jpg);
 	@include background-size(cover);
 }
@@ -26,18 +26,19 @@ footer.site {
 }
 
 header.site .title {
-	padding: 3rem;
+	padding: 2rem;
 	background: rgba(255, 255, 255, 0.8);
 }
 
 header.site .title img {
 	width: 100%;
+	display: block;
 }
 
 header.site aside {
 	position: absolute;
 	bottom: 0;
-	padding: 3rem;
+	padding: 2rem;
 	width: 100%;
 }
 
