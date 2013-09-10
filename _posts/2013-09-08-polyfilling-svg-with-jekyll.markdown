@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Polyfilling SVG with Jekyll"
+author: "Matthew Caruana Galizia"
 date: 2013-09-08 13:50:55
 tags: svg polyfill jekyll retina
 keywords: svg polyfill javascript onerror retina images jekyll

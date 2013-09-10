@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Polyfilling SVG"
+author: "Matthew Caruana Galizia"
 date: 2013-09-07 10:30:01
 tags: svg polyfill retina
 keywords: svg polyfill javascript onerror retina images
@@ -58,7 +59,7 @@ document.addEventListener('error', function() {
 
 For the last step, there a few different routes you can take, depending on your development setup and application stack:
 
-- convert SVG files using a Makefile
+- [convert SVG files using a Makefile](/2013/09/convert-svg-files-using-make/)
 - [a Jekyll SVG to PNG generator](/2013/09/polyfilling-svg-with-jekyll/)
 
 [retina-ready]: http://www.webdesignerdepot.com/2013/04/why-should-you-become-retina-ready/

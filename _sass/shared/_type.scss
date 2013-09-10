@@ -37,7 +37,12 @@ nav.posts p a {
 }
 
 header.post time,
+header.post address.author,
 footer.site p {
 	text-transform: uppercase;
 	font-size: 0.9em;
+}
+
+header.post address.author {
+	color: #ed1c24;
 }
