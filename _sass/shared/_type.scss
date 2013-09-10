@@ -1,0 +1,26 @@
+@import url('http://fonts.googleapis.com/css?family=Fenix|Open+Sans:400italic,700italic,400,700');
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+header p,
+footer p {
+	font-family: 'Roboto', serif;
+}
+
+header.site aside {
+	color: white;
+}
+
+header.site aside a {
+	color: inherit;
+}
+
+footer.site p {
+	font-size: 0.8em;
+}

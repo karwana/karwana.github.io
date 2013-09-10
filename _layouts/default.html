@@ -6,14 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/css/syntax.css">
 		<link rel="stylesheet" href="/css/main.css">
+		<script src="/js/main.js"></script>
 		{% if page.description %}
 		<meta name="description" content="{{ page.description }}">
+		{% endif %}
+		{% if page.keywords %}
+		<meta name="keywords" content="{{ page.keywords }}">
 		{% endif %}
 		<link rel="icon" href="/img/favicon.png">
 	</head>
 	<body>
 		<header class="site">
 			<h1 class="title"><a href="/"><img src="/img/karwana.svg" alt="Karwana Media Consultants"></a></h1>
+			<aside>
+				<p>Karwana is a team of technology and content experts dedicated to news and media. <a href="/about/">Learn more.</a></p>
+			</aside>
 		</header>
 
 		{{ content }}

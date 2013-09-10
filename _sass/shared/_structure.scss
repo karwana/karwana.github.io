@@ -1,0 +1,46 @@
+@import 'compass/css3/box-sizing';
+@import 'compass/css3/background-size';
+
+header.site,
+article,
+footer.site,
+header.site aside {
+	@include box-sizing(border-box);
+}
+
+header.site {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 30%;
+	max-width: 31rem;
+	background-image: url(/img/shadows.jpg);
+	@include background-size(cover);
+}
+
+article,
+footer.site {
+	margin-left: 30%;
+	max-width: 50rem;
+	padding: 0 2rem;
+}
+
+header.site .title {
+	padding: 3rem;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+header.site .title img {
+	width: 100%;
+}
+
+header.site aside {
+	position: absolute;
+	bottom: 0;
+	padding: 3rem;
+	width: 100%;
+}
+
+body > article {
+	margin-top: 3rem;
+}

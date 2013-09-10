@@ -7,7 +7,7 @@ require 'image_optim'
 
 module Jekyll
 
-	class PngGenerator < Generator
+	class SvgPngGenerator < Generator
 		safe true
 
 		def generate(site)
